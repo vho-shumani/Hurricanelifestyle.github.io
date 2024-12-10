@@ -96,9 +96,9 @@
     <div class="section mb-5 p-3" style="background-color: aliceblue;">
       <p class="text-uppercase text-success">Vibrant Energy</p>
       <h2>Experience the beat of Katlehong</h2>
-      <div class="row justify-content-center">
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card h-100">
             <img src="./image/live_perfomance.png" class="card-img-top" alt="live_performance">
             <div class="card-body">
               <h5 class="card-title">Live music</h5>
@@ -109,8 +109,8 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col">
+          <div class="card h-100">
             <img src="./image/events.png" class="card-img-top" alt="event">
             <div class="card-body">
               <h5 class="card-title">Special events</h5>
@@ -121,13 +121,13 @@
             </div>
           </div>
         </div>
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col">
+          <div class="card h-100">
             <img src="./image/food.jpg" class="card-img-top" alt="food">
             <div class="card-body">
               <h5 class="card-title">Pub and grill experience</h5>
               <p class="card-text">
-                savor delicious meals in a lively pub atmosphere.
+                Savor delicious meals in a lively pub atmosphere.
               </p>
               <a href="#contact" class="btn btn-primary">Book</a>
             </div>
@@ -138,42 +138,48 @@
     <div class="section mb-5 p-3" id="contact">
       <p class="text-uppercase text-success"> Get in touch</p>
       <h2>Connect with us for inquires and updates!</h2>
-      <div class="row mt-5">
-        <div class="col-6">
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Name</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="John">
+      <div class="row">
+        <div class="col-12 col-md-6 mb-4">
+          <form action="https://formspree.io/f/myzyapqg" method="POST">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" name="name" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="surname" class="form-label">Surname</label>
+              <input type="text" name="surname" class="form-control" required>
+            </div>
+            <div class="mb-3">
+              <label for="phone" class="form-label">Phone number</label>
+              <input type="tel" class="form-control" name="phone" placeholder="+27 70 0123 467" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" name="message" rows="3"></textarea>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" name="allow">
+              <label class="form-check-label" for="allow">
+                <p> I allow this website to store my submission soo they can respond to my inquiry.</p>
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
           </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Surname</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Doe">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Phone number</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="+27 70 0123 467">
-          </div>
-          <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-          </div>
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-            <label class="form-check-label" for="flexCheckDefault">
-              <p> I allow this website to store my submission soo they can respond to my inquiry.</p>
-            </label>
-          </div>
-          <a href="" class="text-center btn btn-primary">Submit</a>
-        </div>
-
-        <div class="col-6 p-5" style="background-color: #cac9c949;">
+          </form>
+        <div class="col-12 col-md-6 p-5" style="background-color: #cac9c949;">
           <h4 class="fw-bold"> Get in touch</h4>
-          <a>
+          <div class="mb-3">
             <i class="fa fa-phone" aria-hidden="true"></i>
-            083 858 7573</a><br>
-          <a>
+            <a href="tel:+27838587573">083 858 7573</a>
+          </div>
+          <div class="mb-3">
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            083 858 7573</a><br>
-          <i class="fa fa-envelope" aria-hidden="true"></i><a href="#">hurricanelifestyle@aol.com</a>
+            <a href="https://wa.me/27838587573">083 858 7573</a>
+          </div>
+          <div class="mb-3">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:hurricanelifestyle@aol.com">hurricanelifestyle@aol.com</a>
+          </div>
           <h4 class="fw-bold mt-3">Location</h4>
           <p><i class="fa fa-map-marker" aria-hidden="true"></i>
             241 Moseu Street, Hlahatsi section, Katlehong 1431</p>
@@ -192,28 +198,31 @@
   </div>
 
   <footer class="text-white py-3 text-center" style="background-color: rgba(25, 28, 31, 0.74);">
-    <div class="row mb-4">
-      <div class="col-3">
-        <a class="navbar-brand" href="#">
-          <img
-            src="./image/0wuFIppUENgimIZnNfgsEU47xMlun8-metaaHVycmljYW5lIGJsayBuIHdoaXRlIGxvZ28uanBn--detail-removebg-preview.png"
-            alt="Logo" height="110">
-        </a> <br>
-        <a href="https://www.facebook.com/p/Hurricanes-Lifestyle-100077145406797/">
-          <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
-        </a>
-        <a href="https://www.instagram.com/hurricaneslifestyle/">
-          <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="col-3 pt-4">
-        <h3>Pages</h2>
-          <a href="./index.html" style="text-decoration: none; color: white;">Home</a><br>
-          <a href="./index.html#about" style="text-decoration: none; color: white;">About</a><br>
-          <a href="./events.html" style="text-decoration: none; color: white;">Events</a><br>
-          <a href="./Gallery.html" style="text-decoration: none; color: white;">Gallery</a>
-      </div>
-      <div class="col-3 pt-4">
+    <div class="row">
+        <div class="col-12 col-md-3 mb-3">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./image/0wuFIppUENgimIZnNfgsEU47xMlun8-metaaHVycmljYW5lIGJsayBuIHdoaXRlIGxvZ28uanBn--detail-removebg-preview.png"
+              alt="Logo" class="img-fluid">
+          </a> 
+          <div class="social-icons mt-3">
+            <a href="https://www.facebook.com/p/Hurricanes-Lifestyle-100077145406797/">
+              <i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/hurricaneslifestyle/">
+              <i class="fa fa-instagram fa-2x" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-12 col-md-3 mb-3">
+          <h3>Pages</h2>
+            <a href="./index.html" style="text-decoration: none; color: white;">Home</a><br>
+            <a href="./index.html#about" style="text-decoration: none; color: white;">About</a><br>
+            <a href="./events.html" style="text-decoration: none; color: white;">Events</a><br>
+            <a href="./Gallery.html" style="text-decoration: none; color: white;">Gallery</a>
+        </div>
+
+      <div class="col-12 col-md-3 mb-3">
         <h3>Hours</h2>
           <p>Monday: Closed <br>
             Tuesday: Closed<br>
@@ -224,17 +233,21 @@
             Sunday: 2pm - 2am
           </p>
       </div>
-      <div class="col-3 pt-4">
+      <div class="col-12 col-md-3 mb-3">
         <h3>Contact Us</h2>
-          <a>
+          <div>
             <i class="fa fa-phone" aria-hidden="true"></i>
-            083 858 7573</a><br>
-          <a>
+            <a href="tel:+2783857573">083 858 7573</a>
+          </div>
+          <div>
             <i class="fa fa-whatsapp" aria-hidden="true"></i>
-            083 858 7573</a><br>
-          <i class="fa fa-envelope" aria-hidden="true"></i><a>hurricanelifestyle@aol.com</a>
+            <a href="https://wa.me/27838587573">083 858 7573</a> 
+          </div>
+          <div>
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <a href="mailto:hurricanelifestyle@aol.com">hurricanelifestyle@aol.com</a>
+          </div>
       </div>
-    </div>
     <p>&copy; 2024 hurricanelifestyle. All rights reserved.</p>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
